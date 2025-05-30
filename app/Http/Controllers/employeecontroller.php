@@ -45,6 +45,7 @@ class employeecontroller extends Controller
 
         employee::findOrFail($id)->update($request->all());
         return redirect()->back()->with('status', 'Employee Updated');
+        //test
     }
 
     public function edit(int $id)
