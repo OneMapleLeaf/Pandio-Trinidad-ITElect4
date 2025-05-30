@@ -59,8 +59,8 @@
                                         <td>{{ $items->address }}</td>
                                         <td>{{ $items->zip }}</td>
                                         <td> 
-                                                <span class="badge bg-success"><a class="btn btn-success mx-3"><h5>Edit</h5></a></span>
-                                                <span class="badge bg-danger"><a class="btn btn-danger mx-3"><h5>Delete</h5></a></span>
+                                                <span class="badge bg-success"><a class="btn btn-success mx-3" href="{{route('employee.edit', $items->id)}}"><h5>Edit</h5></a></span>
+                                                <span class="badge bg-danger"><a class="btn btn-danger mx-3" href="{{route('employee.delete', $items->id)}}"><h5>Delete</h5></a></span>
                                         </td>       
                                     </tr>
                                     @endforeach
